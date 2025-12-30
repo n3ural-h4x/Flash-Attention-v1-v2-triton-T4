@@ -119,7 +119,6 @@ All implementations maintain excellent numerical precision with errors in the or
 ### Benchmarks
 
 The benchmark notebook includes:
-- Memory usage comparisons across implementations
 - Speed benchmarks across sequence lengths (256 to 16384 tokens)
 - Numerical accuracy verification with error metrics
 - Scaling analysis showing performance characteristics
@@ -127,7 +126,8 @@ The benchmark notebook includes:
 
 
 
-**Note**: This implementation was tested on Tesla T4 GPU. Performance may vary on different GPU architectures.
+**Note**: This implementation was tested on Tesla T4 GPU. Performance may vary on different GPU architectures. But all the kernels perform
+outstandigly the best as compared to SDPA.
 
 ## Usage
 
@@ -158,11 +158,8 @@ Open and run the benchmark notebook:
 - Generate performance graphs across sequence lengths
 - Verify numerical correctness with error metrics
 - Test various sequence lengths (256 to 16384 tokens) and batch sizes
-- Display memory efficiency improvements
 
 ## Implementation Details
-
-
 
 **Flash Attention V1**: Uses m_i (max statistics) and l_i (sum statistics) for softmax recomputation
 **Flash Attention V2**: Optimized to use only LSE (Log-Sum-Exponential) and uses 2^x rather than e^x for more efficient recomputation
