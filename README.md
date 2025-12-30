@@ -4,7 +4,7 @@ A Triton implementation of Flash Attention algorithms (v1 and v2) that dramatica
 
 ## Overview
 
-This project implements the Flash Attention algorithms from scratch using Triton, demonstrating how to optimize the attention mechanism in transformers. Flash Attention reduces memory complexity from O(N²) to O(N) while maintaining numerical stability and improving speed. Kernels were tested on T4 gpu and computed using dtype=float16
+This project implements the Flash Attention algorithms from scratch using Triton, demonstrating how to optimize the attention mechanism in transformers. Flash Attention reduces memory complexity from O(N²) to O(N) while maintaining numerical stability and improving speed. Kernels were tested on T4 gpu and computed using dtype=float16.
 
 ## Key Features
 
@@ -140,12 +140,12 @@ from kernels.flash_v1 import Myattention1
 output = Myattention1.apply(Q, K, V, causal=False)
 
 # Flash Attention v2 (Non-Atomic)
-from kernels.flash_v2_non_atomic import MyattentionV2
+from kernels.flash_v2(non-atomic) import MyattentionV2
 
 output = MyattentionV2.apply(Q, K, V, causal=False)
 
 # Flash Attention v2 (Atomic)
-from kernels.flash_v2_atomic import Myattention2
+from kernels.flash_v2(atomic) import Myattention2
 
 output = Myattention2.apply(Q, K, V, causal=False)
 ```
