@@ -1,6 +1,6 @@
 # Flash Attention: Memory-Efficient Attention Implementation
 
-A Triton implementation of Flash Attention algorithms (v1 and v2) that dramatically reduces memory usage and improves computational efficiency for transformer models.
+A Triton implementation of Flash Attention algorithms (v1 and v2) that dramatically reduces memory usage and improves computational efficiency for transformer models while beating the SDPA(Pytorch's own implementation of the algorithm) on all the seq_len.
 
 ## Overview
 
