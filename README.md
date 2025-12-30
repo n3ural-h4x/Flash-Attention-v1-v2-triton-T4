@@ -63,7 +63,7 @@ Improves upon v1 by:
 All benchmarks were conducted on a **Tesla T4 GPU** (Google Colab environment).
 
 ### Forward Pass Performance
-![Forward Pass Performance](images\Screenshot 2025-12-24 182015.png)
+![Forward Pass Performance](images/Screenshot 2025-12-24 182015.png)
 *Forward pass latency comparison across sequence lengths*
 
 **Key Observations:**
@@ -83,7 +83,7 @@ All benchmarks were conducted on a **Tesla T4 GPU** (Google Colab environment).
 | 16384 | 95.750 ms | 96.884 ms | 108.312 ms | 186.714 ms | inf |
 
 ### Forward + Backward Pass Performance
-![Forward+Backward Pass Performance](images\Screenshot 2025-12-24 182015.png)
+![Forward+Backward Pass Performance](images/Screenshot 2025-12-24 182015.png)
 *Combined forward and backward pass latency demonstrating efficient gradient computation*
 
 **Key Observations:**
@@ -102,7 +102,7 @@ All benchmarks were conducted on a **Tesla T4 GPU** (Google Colab environment).
 | 16384 | 572.292 ms | 835.843 ms | 646.165 ms | 930.631 ms | inf |
 
 ### Numerical Stability
-![Numerical Stability](images\Screenshot 2025-12-24 183157.png)
+![Numerical Stability](images/Screenshot 2025-12-24 183157.png)
 *Numerical accuracy comparison showing all implementations maintain comparable precision*
 
 **Error Metrics:**
