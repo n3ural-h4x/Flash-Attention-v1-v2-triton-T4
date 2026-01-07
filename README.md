@@ -203,6 +203,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 For questions or discussions about this implementation, please open an issue on GitHub.
 
----
-
-**Note**: This is an educational implementation. For production use, consider the official Flash Attention library which includes additional optimizations and hardware-specific tuning.
